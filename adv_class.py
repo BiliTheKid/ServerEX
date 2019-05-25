@@ -13,15 +13,16 @@ if __name__ == "__main__":
 #create class for Client known as client someone who stay in wifi range
 #id=mac_adress , Location = Destantion
 class Client:
-  def __init__(Client_obj,Id,Location,Categorie,Gender,Age,Email):
-      Client_obj.Id=Id
+  def __init__(Client_obj,Id,Location,Categorie,Gender,Age,Email,Super_tag):
+      Client_obj.Id=Id ##mac addres
       Client_obj.Gender = Gender
       Client_obj.Age = Age
       Client_obj.Categorie = Categorie
-      Client_obj.Email=Email
-      Client_obj.Location= Location
+      Client_obj.Email = Email
+      Client_obj.Location = Location
+      Client_obj.Super_tag = Super_tag
   def myfunc(abc):
-    print("Data of Client "  + abc.Id + abc.Categorie + abc.Gender + abc.Age + abc.Email +abc.Location)
+    print("Data of Client "  + abc.Id + abc.Categorie + abc.Gender + abc.Age + abc.Email +abc.Location +abc.Super_tag)
 
 
 #create adv, known as Third party, which provide the adv for Client.
